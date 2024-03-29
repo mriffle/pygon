@@ -1,5 +1,4 @@
 from .pygon_helpers import download_obo_file, load_obo, get_ancestors, get_descendants
-from .pygon_term import PyGONTerm
 
 
 class PyGON:
