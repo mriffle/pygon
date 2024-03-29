@@ -42,8 +42,6 @@ class PyGON:
         return self.children.get(term_id, set())
 
     def get_term_ancestors(self, term_id):
-        if term_id not in self.terms:
-            raise ValueError(f"Term ID '{term_id}' not found in the terms dictionary.")
         return get_ancestors(term_id, self.terms)
 
     def get_term_descendants(self, term_id):

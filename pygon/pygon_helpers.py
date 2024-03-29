@@ -147,6 +147,10 @@ def get_ancestors(term_id, terms):
     Raises:
         ValueError: If the term ID is not found in the terms dictionary.
     """
+
+    if term_id not in terms:
+        return set()
+
     ancestors = set()
     queue = [term_id]
     while queue:
