@@ -1,7 +1,6 @@
 import sys
 import urllib.request
 from urllib.error import URLError
-from urllib.parse import urljoin
 from io import StringIO
 from collections import defaultdict
 from .pygon_term import PyGONTerm
